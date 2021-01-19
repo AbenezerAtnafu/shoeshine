@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
     <title>LogIn</title>
 </head>
@@ -60,66 +63,57 @@
         </div>
       </nav>
 
-
-
-   
-            <div class="row mt-5 p-5" style="justify-content: center;">
-                <div class="col-md-3"></div>
-                <div class="col-md-5">
-                    <form class="m-5" action="https://t.me/sassy_bgs" method="POST" style="border: grey;">
-                        
-                        <h2 class="p-5" style="text-align: center;">Log In</h2>
-                        <div class="form-group">
-                          
-                          <input class="form-control text-white" type="text" name="uname" id="uname" placeholder="User Name" style="background-color:lightgray ;border:1px solid black;border: none;" required>
-            
-                        </div>
-                        <div class="form-group">
-                         
-                          <input class="form-control text-white" type="password" name="password" id="password" placeholder="password" style="background-color:lightgray ;border:1px solid black;border: none;" required>
-                        </div>
-                        
-                            <button class="form-control-lg btn-outline-dark d-block m-3 justify-content-center" style="float: left;" type="submit">Log In</button>
-                          <button class="form-control-lg btn-outline-dark d-block m-3" type="submit" style="float: right;">Register</button>
-
-                        </form>
-                </div>
-                <div class="col-md-4"></div>
+      <div class="container form-bg w-50 mx-auto my-5">
+        <form class="p-5">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
-
-
-
-            <footer>
-                <div class="row mx-auto" style="background-color:rgb(4, 12, 44);">
-                    <div class="py-4 px-4 col-md-5 col-sm-5" style="color: white;">
-                        <h3>Heading</h3>
-                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius inventore eaque
-                            modi aliquid qui, sit
-                            nihil non facere at magni neque! Modi ipsum, suscipit tenetur vel quaerat possimus incidunt rem!</p>
-                    </div>
-                    <div class="py-4 col-md-3 col-sm-3" style="color: white;">
-                        <h3>Links</h3>
-                        <ul id="lists">
-                            <li><a href="">Lorem ipsum</a></li>
-                            <li><a href="">Nam mauris velit</a></li>
-                            <li><a href="">Etiam vitae mauris</a></li>
-                            <li><a href="">Fusce scelerisque</a></li>
-                            <li><a href="">Sed faucibus</a></li>
-                            <li><a href="">Mauris efficitur nulla</a></li>
-                        </ul>
-                    </div>
-                    <div class="pt-4  col-md-4 col-sm-4" style="color: white;">
-                        <h3>Location</h3>
-                        <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
-                        <p><i class="fa fa-phone"></i> (541) 754-3010</p>
-                        <p><i class="far fa-envelope"></i> info@hsdf.com</p>
-                    </div>
-                    <div class="ml-3">
-                        <p class="" style="color: #aaa;">&copy; 2020, All Rights Reserved.</p>
-                    </div>
-                </div>
+            <div class="form-group">
+                <label for="inputPassword5">Password</label>
+                <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                <small id="passwordHelpBlock" class="form-text text-muted">
+                  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                </small>
+            </div>
             
-            </footer>
+            <a href="./logIn.html" type="button" class="btn btn-primary">Submit</a>
+          </form>
+      </div>
+
+    <footer>
+        <div class="row mx-auto mt-5" style="background-color:rgb(70, 80, 119);">
+            <div class="py-4 px-4 col-md-5 col-sm-5" style="color: white;">
+                <h3>Heading</h3>
+                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius inventore eaque
+                    modi aliquid qui, sit
+                    nihil non facere at magni neque! Modi ipsum, suscipit tenetur vel quaerat possimus incidunt rem!</p>
+            </div>
+            <div class="py-4 col-md-3 col-sm-3" style="color: white;">
+                <h3>Links</h3>
+                <ul id="lists">
+                    <li><a href="">Lorem ipsum</a></li>
+                    <li><a href="">Nam mauris velit</a></li>
+                    <li><a href="">Etiam vitae mauris</a></li>
+                    <li><a href="">Fusce scelerisque</a></li>
+                    <li><a href="">Sed faucibus</a></li>
+                    <li><a href="">Mauris efficitur nulla</a></li>
+                </ul>
+            </div>
+            <div class="pt-4  col-md-4 col-sm-4" style="color: white;">
+                <h3>Location</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 22, Lorem ipsum dolor, consectetur adipiscing</p>
+                <p><i class="fas fa-phone"></i> (541) 754-3010</p>
+                <p><i class="fas fa-envelope"></i> info@hsdf.com</p>
+                <p><i class="fas fa-facebook"></i> Facebook</p>
+            </div>
+            <div class="ml-3">
+                <p class="" style="color: #aaa;">&copy; 2020, All Rights Reserved.</p>
+            </div>
+        </div>
+
+    </footer>
 
 
 
